@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../css/style_secondPage.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Candal'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Basic'>
+</head>
+
+<body onload="showSection('donut')">
+    <div class="logo"></div>
+    <div class="header">Bake-UP</div>
+    <nav class="head-nav">
+        <div class="nav">
+            <ul>
+                <li class="navli"><a href="../index.html">Home Page</a></li>
+                <li class="navli"><a href="menu.html">Menu</a></li>
+                <li class="navli"><a href="specialOffer.html">Special Offer</a></li>
+                <li class="navli"><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="welcome-section" class="section main-section">
+        <h2 id="welcome-heading">Baked Goods & Drinks</h2>
+        <p id="welcome-description">We offer a delightful selection of fresh, homemade baked goods and drinks. Satisfy your cravings with our delightful selection of baked goods and beverages.</p>
+    </div>
+
+    <nav class="sub-nav">
+        <ul>
+          <br>
+          <li><a href="javascript:void(0);" onclick="showSection('donut')">Donut</a></li>
+          <li><a href="javascript:void(0);" onclick="showSection('cake')">Cake</a></li>
+          <li><a href="javascript:void(0);" onclick="showSection('brioche')">Brioche</a></li>
+          <li><a href="javascript:void(0);" onclick="showSection('drink')">Drink</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <!-- content for donut section -->
+    <div id="donut" class="content-section" style="display: none;">
+        <div class="box-container">
+            <!-- trigger the modal -->
+            <div class="each-container" data-modal="modal1">
+                <div class="text-container">
+                    <h4>Strawberry Cream Donut</h4>
+                    <p>Sugar coated brioche donut filled with fresh cream and fresh strawberries</p>
+                    <p>CAD$4.25</p>
+                </div>
+                <div class="image-container">
+                <img src="../picture/bakedgood/donut/Strawberry Cream Donut.jpeg" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal2">
+                <div class="text-container">
+                    <h4>Matcha Cream Donut</h4>
+                    <p>Matcha sugar coated brioche donut filled with matcha whipping cream</p>
+                    <p>CAD$4.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/donut/Matcha Cream Donut.jpeg" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal3">
+                <div class="text-container">
+                    <h4>Earl Grey Cream Donut</h4>
+                    <p>Sugar coated brioche donut filled with earl grey infused fresh cream</p>
+                    <p>CAD$4.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/donut/Earl Grey Cream Donut.jpeg" alt="">
+                </div>            
+            </div>
+            <div class="each-container" data-modal="modal4">
+                <div class="text-container">
+                    <h4>Chocolate Caramel Donut</h4>
+                    <p>Cocoa sugar coated brioche donut filled with rich chocolate cream with caramel</p>
+                    <p>CAD$4.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/donut/Chocolate Caramel Donut.jpeg" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal5">
+                <div class="text-container">
+                    <h4>Creme Brulee Donut</h4>
+                    <p>Brioche donut filled with custard cream and caramelized sugar on top</p>
+                    <p>CAD$4.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/donut/Creme Brulee Donut.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content for cake section -->
+    <div id="cake" class="section" style="display: none;">
+        <div class="box-container">
+            <div class="each-container" data-modal="modal6">
+                <div class="text-container">
+                    <h4>Double Berry Cheesecake 7"</h4>
+                    <p>Baked double layer Vanilla Cheesecake with double berry compote</p>
+                    <p>CAD$50</p>
+                </div>
+                <div class="image-container">
+                <img src="../picture/bakedgood/cake/Double Berry Cheesecake .jpeg" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal7">
+                <div class="text-container">
+                    <h4>Strawberry Cream Cake 7"</h4>
+                    <p>Layered vanilla sponge cake with whipping cream and fresh strawberries</p>
+                    <p>CAD$50</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/cake/Strawberry Cream Cake.webp" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal8">
+                <div class="text-container">
+                    <h4>Espresso Tiramisu Cake 7"</h4>
+                    <p>Vanilla cake with espresso syrup with creamy mascarpone cheese filling</p>
+                    <p>CAD$50</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/cake/Espresso Tiramisu Cake.jpeg" alt="">
+                </div>            </div>
+            <div class="each-container" data-modal="modal9">
+                <div class="text-container">
+                    <h4>Matcha Tiramisu Cake 7"</h4>
+                    <p>Vanilla cake with matcha syrup with creamy mascarpone cheese filling</p>
+                    <p>CAD$50</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/cake/Matcha Tiramisu Cake.jpeg" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal10">
+                <div class="text-container">
+                    <h4>Mango Tiramisu Cake 7"</h4>
+                    <p>Vanilla cake with mango puree syrup with creamy mascarpone cheese filling</p>
+                    <p>CAD$50</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/cake/Mango Tiramisu Cake.jpeg" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal11">
+                <div class="text-container">
+                    <h4>Oreo Cheesecake 7"</h4>
+                    <p>Baked Oreo cheesecake with vanilla cheese moose and Oreo crumbs</p>
+                    <p>CAD$50</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/cake/Oreo Cheesecake.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content for brioche section -->
+    <div id="brioche" class="section" style="display: none;">
+        <div class="box-container">
+            <div class="each-container" data-modal="modal12">
+                <div class="text-container">
+                    <h4>Sausage Cheese Brioche</h4>
+                    <p>All beef sausage with ketchup, mayo, cheese, and corn</p>
+                    <p>CAD$4.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/brioche/Sausage Cheese Brioche.webp" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal13">
+                <div class="text-container">
+                    <h4>Maldon Salt Brioche</h4>
+                    <p>Brioche filled with butter and finished with maldon salt on top</p>
+                    <p>CAD$4.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/brioche/Maldon Salt Brioche.webp" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal14">
+                <div class="text-container">
+                    <h4>Red Bean Brioche</h4>
+                    <p>Milk washed brioche with red bean filling (*contains nuts)</p>
+                    <p>CAD$3.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/brioche/Red Bean Brioche.jpeg" alt="">
+                </div>            
+            </div>
+            <div class="each-container" data-modal="modal15">
+                <div class="text-container">
+                    <h4>Soboro Brioche</h4>
+                    <p>Brioche bread with crunchy peanut cookie top</p>
+                    <p>CAD$3.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/brioche/Soboro Brioche.jpeg" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal16">
+                <div class="text-container">
+                    <h4>Vanilla Custard Cream Brioche</h4>
+                    <p>Brioche bread with crunchy peanut cookie top and filling with vanilla custard cream</p>
+                    <p>CAD$4.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/brioche/Vanilla Custard Cream Brioche.jpeg" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal17">
+                <div class="text-container">
+                    <h4>Matcha Cream Brioche</h4>
+                    <p>Brioche bread with crunchy peanut cookie top and filling with rich matcha cream</p>
+                    <p>CAD$4.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/brioche/Matcha Cream Brioche.jpeg" alt="">
+                </div>
+            </div>
+            <div class="each-container" data-modal="modal18">
+                <div class="text-container">
+                    <h4>Chocolate Cream Brioche</h4>
+                    <p>Brioche bread with crunchy peanut cookie top and filling with rich chocolate cream</p>
+                    <p>CAD$4.25</p>
+                </div>
+                <div class="image-container">
+                    <img src="../picture/bakedgood/brioche/Chocolate Cream Brioche.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content for drink section -->
+    <div id="drink" class="section" style="display: none;">
+        <img src="../picture/bakedgood/Coffee Menu V3.webp" alt="" id="img_drink">
+    </div>
+
+    <div>
+        <!-- Modal content -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/donut/Strawberry Cream Donut.jpeg" alt="" id="img_modal">
+                <h4>Strawberry Cream Donut</h4>
+                <p>Sugar coated brioche donut filled with fresh cream and fresh strawberries</p>
+                <p>CAD$4.25</p>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/donut/Matcha Cream Donut.jpeg" alt="" id="img_modal">
+                <h4>Matcha Cream Donut</h4>
+                <p>Matcha sugar coated brioche donut filled with matcha whipping cream</p>
+                <p>CAD$4.25</p>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/donut/Earl Grey Cream Donut.jpeg" alt="" id="img_modal">
+                <h4>Earl Grey Cream Donut</h4>
+                <p>Sugar coated brioche donut filled with earl grey infused fresh cream</p>
+                <p>CAD$4.25</p>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/donut/Chocolate Caramel Donut.jpeg" alt="" id="img_modal">
+                <h4>Chocolate Caramel Donut</h4>
+                <p>Cocoa sugar coated brioche donut filled with rich chocolate cream with caramel</p>
+                <p>CAD$4.25</p>
+            </div>
+        </div>
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/donut/Creme Brulee Donut.jpeg" alt="" id="img_modal">
+                <h4>Creme Brulee Donut</h4>
+                <p>Brioche donut filled with custard cream and caramelized sugar on top</p>
+                <p>CAD$4.25</p>
+            </div>
+        </div>
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/cake/Double Berry Cheesecake .jpeg" alt="" id="img_modal">
+                <h4>Double Berry Cheesecake 7"</h4>
+                <p>Baked double layer Vanilla Cheesecake with double berry compote</p>
+                <p>CAD$50</p>
+            </div>
+        </div>
+        <div id="modal7" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/cake/Strawberry Cream Cake.webp" alt="" id="img_modal">
+                <h4>Strawberry Cream Cake 7"</h4>
+                <p>Layered vanilla sponge cake with whipping cream and fresh strawberries</p>
+                <p>CAD$50</p>
+            </div>
+        </div>
+        <div id="modal8" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/cake/Espresso Tiramisu Cake.jpeg" alt="" id="img_modal">
+                <h4>Espresso Tiramisu Cake 7"</h4>
+                <p>Vanilla cake with espresso syrup with creamy mascarpone cheese filling</p>
+                <p>CAD$50</p>
+            </div>
+        </div>
+        <div id="modal9" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/cake/Matcha Tiramisu Cake.jpeg" alt="" id="img_modal">
+                <h4>Matcha Tiramisu Cake 7"</h4>
+                <p>Vanilla cake with matcha syrup with creamy mascarpone cheese filling</p>
+                <p>CAD$50</p>
+            </div>
+        </div>
+        <div id="modal10" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/cake/Mango Tiramisu Cake.jpeg" alt="" id="img_modal">
+                <h4>Mango Tiramisu Cake 7"</h4>
+                <p>Vanilla cake with mango puree syrup with creamy mascarpone cheese filling</p>
+                <p>CAD$50</p>
+            </div>
+        </div>
+        <div id="modal11" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/cake/Oreo Cheesecake.jpeg" alt="" id="img_modal">
+                <h4>Oreo Cheesecake 7"</h4>
+                <p>Baked Oreo cheesecake with vanilla cheese moose and Oreo crumbs</p>
+                <p>CAD$50</p>
+            </div>
+        </div>
+        <div id="modal12" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/brioche/Sausage Cheese Brioche.webp" alt="" id="img_modal">
+                <h4>Sausage Cheese Brioche</h4>
+                <p>All beef sausage with ketchup, mayo, cheese, and corn</p>
+                <p>CAD$4.25</p>
+            </div>
+        </div>
+        <div id="modal13" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/brioche/Maldon Salt Brioche.webp" alt="" id="img_modal">
+                <h4>Maldon Salt Brioche</h4>
+                <p>Brioche filled with butter and finished with maldon salt on top</p>
+                <p>CAD$4.25</p>
+            </div>
+        </div>
+        <div id="modal14" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/brioche/Red Bean Brioche.jpeg" alt="" id="img_modal">
+                <h4>Red Bean Brioche</h4>
+                <p>Milk washed brioche with red bean filling (*contains nuts)</p>
+                <p>CAD$3.25</p>
+            </div>
+        </div>
+        <div id="modal15" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/brioche/Soboro Brioche.jpeg" alt="" id="img_modal">
+                <h4>Soboro Brioche</h4>
+                <p>Brioche bread with crunchy peanut cookie top</p>
+                <p>CAD$3.25</p>
+            </div>
+        </div>
+        <div id="modal16" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/brioche/Vanilla Custard Cream Brioche.jpeg" alt="" id="img_modal">
+                <h4>Vanilla Custard Cream Brioche</h4>
+                <p>Brioche bread with crunchy peanut cookie top and filling with vanilla custard cream</p>
+                <p>CAD$4.25</p>
+            </div>
+        </div>
+        <div id="modal17" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/brioche/Matcha Cream Brioche.jpeg" alt="" id="img_modal">
+                <h4>Matcha Cream Brioche</h4>
+                <p>Brioche bread with crunchy peanut cookie top and filling with rich matcha cream</p>
+                <p>CAD$4.25</p>
+            </div>
+        </div>
+        <div id="modal18" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <img src="../picture/bakedgood/brioche/Chocolate Cream Brioche.jpeg" alt="" id="img_modal">
+                <h4>Chocolate Cream Brioche</h4>
+                <p>Brioche bread with crunchy peanut cookie top and filling with rich chocolate cream</p>
+                <p>CAD$4.25</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/script_secondPage.js"></script>
+</body>
+</html>

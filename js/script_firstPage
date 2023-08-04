@@ -1,0 +1,28 @@
+i = 0;
+var leftPosition = -200;
+
+function runCake() {
+
+    var cupcake = document.getElementById("cupcake");
+
+    if (i < 700) {
+        i = i + 10;
+        cupcake.style.left = i + "px"
+    }
+    else {
+        i = 0;
+    }
+    console.log("move" + i)
+}
+
+var maximages = 6;
+
+//Folder name and start of file name of each image file. 
+var startpath = "picure/pic"
+//Filename extension of each image.
+var extension = ".jpg"
+
+//Show clicked image in the large img tag 
+function showbig(pic) {
+    document.getElementById("bigpic").src = pic;
+}

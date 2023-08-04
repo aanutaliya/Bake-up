@@ -1,0 +1,246 @@
+body {
+    width: 90%;
+    margin: auto;
+    background-color: #FFF4F2;
+    font-family: 'Basic'
+}
+
+html {
+    height: 150%;
+    /* making the grid to fit the whole page*/
+}
+
+.grid-container {
+    display: grid;
+    /* height: 200%; */
+    height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 4rem 2rem 1fr 1fr auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'main main main main main main'
+        'writeup writeup image image image image'
+        'footer footer footer footer footer footer';
+    gap: 5px;
+}
+
+div {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header {
+    grid-area: header;
+    grid-column: 5/7;
+    /* background-color: lightpink; */
+    color: darkred;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 40px;
+
+    /* add */
+    font-family: 'Candal';
+}
+
+.nav {
+    grid-area: nav;
+    grid-column: 1/7;
+    grid-row-start: 2;
+    background-color: lightpink;
+    color: brown;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    float: left;
+    border-radius: 10px;
+
+}
+
+.navli a:hover {
+    color: rgb(90, 0, 36);
+}
+
+.main {
+    grid-area: main;
+    height: 200px;
+    grid-column: 1/7;
+    grid-row-start: 3;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-image: url(../picture/pic2.jpg);
+}
+
+.writeup {
+    grid-area: writeup;
+    /* height: 600px; */
+    grid-column: 1 / span 3;
+    grid-row-start: 4;
+    padding-left: 10px;
+    border: double 5px lightpink;
+    border-radius: 5px;
+}
+
+.writeup h1 {
+    font: bolder;
+    font-size: 40px;
+    font-family: "cursive", Lucida Handwriting;
+
+}
+
+.writeup p {
+    font-family: "cursive", Comic Sans MS;
+    font-size: 20px;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.nav ul {
+    margin: 0;
+    margin-top: 4px;
+    padding: 0;
+}
+
+.nav ul li {
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.nav ul::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.cake-video {
+    height: 100%;
+    /* left: 0;
+    position: relative;
+    top: 0; */
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: larger;
+    color: darkred;
+}
+
+p {
+    text-align: left;
+    font-size: large;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: brown;
+}
+
+.thumbs img {
+    height: 80px;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+.navli :hover{
+    color: blue;
+}
+
+.slideshow-container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-column: 4 / span 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-gap: 20px;
+    overflow: hidden;
+  }
+
+
+.slideshow {
+    display: flex;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+    
+}
+
+.slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+  
+/* .slide-content {
+    position: relative;
+    top: 50%;
+    left: 20px;
+    right: initial;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 70%;
+} */
+
+
+.slide-content h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "cursive", Lucida Handwriting;
+    font-size: 24px;
+    color: darkred;
+
+}
+
+.slide-content p {
+    margin: 10px 0;
+    padding: 0;
+    font-family: "cursive", Comic Sans MS;
+    font-size: 20px;
+    color: darkred;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    grid-column: 1 / span 6;
+    grid-row-start: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+
+}
+
+.footer h1 {
+    font: bolder;
+    font-size: 40px;
+    font-family: "cursive", Lucida Handwriting;
+
+}
+
+.footer p {
+    font-size: 25px;
+    font-family: "cursive", Lucida Handwriting;
+
+}

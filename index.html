@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_firstPage.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Candal'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Basic'>
+    <title>Bake-UP</title>
+</head>
+
+<body onload="setInterval(runCake, 100)">
+    <div class="grid-container">
+        <div class="animation">
+            <p> <img id="cupcake" src="picture/cakeRunning.gif" alt="" width="80px"></p>
+        </div>
+        <div class="header">Bake-UP</div>
+        <div class="nav">
+            <ul>
+                <li class="navli"><a href="index.html">Home Page</a></li>
+                <li class="navli"><a href="html/menu.html">Menu</a></li>
+                <li class="navli"><a href="html/specialOffer.html">Special Offer</a></li>
+                <li class="navli"><a href="html/contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <video class="cake-video" src="picture/mixkit-people-taking-a-cake-from-the-birthday-table-5115-medium.mp4"
+                poster="picture/pic1.jpg" autoplay loop muted></video>
+        </div>
+        <div class="story">
+            <h1>Our Story</h1>
+            <p>We opened our first bakery in Vancouver in 2023 with one goal: to make the world a sweeter place through
+                warm smiles, gooey sticky buns, and irresistible BLTs. Every day we pinch ourselves that we get to do
+                what we love - share awesome food and welcoming hospitality - with everyone who walks through our doors
+                and visits us here.</p>
+            <p>We are passionate in our pursuits to:</p>
+            <ul class="msg">
+                <li class="msg">Share the best food + drink with our guests</li><br>
+                <li class="msg">Provide enthusiastic, genuine, welcoming service to our guests,</li><br>
+                <li class="msg">Operate an ethical and efficiently run business</li><br>
+                <li class="msg">Support our community by participating in local education, hunger relief, arts, and
+                    charity events; and donating a portion of all annual revenue to organizations chosen by Flour Bakery
+                    team members</li><br>
+            </ul>
+            <p>
+        </div>
+        <div class="image">
+            <img src="picture/pic1.jpg" alt="" id="bigpic" />
+            <div class="thumbs">
+                <img src="picture/pic1.jpg" alt="" onclick="showbig(this.src)" />
+                <img src="picture/pic2.jpg" alt="" onclick="showbig(this.src)" />
+                <img src="picture/pic3.jpg" alt="" onclick="showbig(this.src)" />
+                <img src="picture/pic4.jpg" alt="" onclick="showbig(this.src)" />
+                <img src="picture/pic5.jpg" alt="" onclick="showbig(this.src)" />
+                <img src="picture/pic6.jpeg" alt="" onclick="showbig(this.src)" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/script_firstPage"></script>
+
+</html>
