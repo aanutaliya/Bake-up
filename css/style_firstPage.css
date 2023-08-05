@@ -75,7 +75,7 @@ div {
     height: 400px;
     grid-column: 1/7;
     grid-row-start: 3;
-    background-image: url(picture/pic2.jpg);
+    background-image: url(../picture/pic2.jpg);
     margin-top: 30px;
     margin-bottom: 30px;
 
